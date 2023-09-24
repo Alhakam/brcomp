@@ -1,0 +1,606 @@
+<https://w3id.org/brcomp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/brcomp> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/brcomp/0.1> .
+<https://w3id.org/brcomp> <http://purl.org/dc/termscreator> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Al-Hakam Hamdan" .
+<https://w3id.org/brcomp> <http://purl.org/dc/termscreator> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Taras Kozak" .
+<https://w3id.org/brcomp> <http://purl.org/dc/termsdescription> "Ontology for bridge components and their properties"@en .
+<https://w3id.org/brcomp> <http://purl.org/dc/termslicense> "https://creativecommons.org/licenses/by/1.0" .
+<https://w3id.org/brcomp> <http://purl.org/dc/termsmodified> "23th May 2019" .
+<https://w3id.org/brcomp> <http://purl.org/dc/termstitle> "Bridge Components"@en .
+<https://w3id.org/brcomp> <http://purl.org/vocab/vann/preferredNamespacePrefix> "brcomp" .
+<https://w3id.org/brcomp> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/brcomp#" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/brcomp#coatingArea
+<https://w3id.org/brcomp#coatingArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#coatingArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Coating> .
+<https://w3id.org/brot#Coating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#coatingArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Gibt die Fläche des abgedichteten Bereichs an.\n\nEinheit in [m²]"@de .
+<https://w3id.org/brcomp#coatingArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the area of the used coating on a component.\n\nUnit in [m²]."@en .
+<https://w3id.org/brcomp#coatingArea> <http://www.w3.org/2000/01/rdf-schema#label> "Abdichtungsfläche"@de .
+<https://w3id.org/brcomp#coatingArea> <http://www.w3.org/2000/01/rdf-schema#label> "coating area"@en .
+# 
+# https://w3id.org/brcomp#coatingThickness
+<https://w3id.org/brcomp#coatingThickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#coatingThickness> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Coating> .
+<https://w3id.org/brcomp#coatingThickness> <http://www.w3.org/2000/01/rdf-schema#comment> "Dicke (Dichtungsschicht + Schutzschicht)\n\nEinheit in [cm]"@de .
+<https://w3id.org/brcomp#coatingThickness> <http://www.w3.org/2000/01/rdf-schema#comment> "Thickness (sealing layer + protective layer)\n\nUnit in [cm]"@en .
+<https://w3id.org/brcomp#coatingThickness> <http://www.w3.org/2000/01/rdf-schema#label> "Abdichtungsdicke"@de .
+<https://w3id.org/brcomp#coatingThickness> <http://www.w3.org/2000/01/rdf-schema#label> "coating thickness"@en .
+# 
+# https://w3id.org/brcomp#concreteCover
+<https://w3id.org/brcomp#concreteCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#concreteCover> <http://www.w3.org/2000/01/rdf-schema#comment> "Distance between the concrete surface and the outer edge of a reinforcing steel coated with concrete of a Component."@en .
+<https://w3id.org/brcomp#concreteCover> <http://www.w3.org/2000/01/rdf-schema#label> "Betondeckung"@de .
+<https://w3id.org/brcomp#concreteCover> <http://www.w3.org/2000/01/rdf-schema#label> "concrete cover"@en .
+# 
+# https://w3id.org/brcomp#criticalTempSummer
+<https://w3id.org/brcomp#criticalTempSummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#criticalTempSummer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brcomp#Bearing> .
+<https://w3id.org/brcomp#criticalTempSummer> <http://www.w3.org/2000/01/rdf-schema#comment> "Gibt die Kritische Temperatur für Lagerbauteile im Sommer an.\n\nEinheit in [Celsius]"@de .
+<https://w3id.org/brcomp#criticalTempSummer> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the critical temperature for a Bearing in summer.\n\nUnit in [Celsius]."@en .
+<https://w3id.org/brcomp#criticalTempSummer> <http://www.w3.org/2000/01/rdf-schema#label> "Citical Temperature Summer"@en .
+<https://w3id.org/brcomp#criticalTempSummer> <http://www.w3.org/2000/01/rdf-schema#label> "Kritische Temperatur Sommer"@de .
+# 
+# https://w3id.org/brcomp#criticalTempWinter
+<https://w3id.org/brcomp#criticalTempWinter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#criticalTempWinter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brcomp#Bearing> .
+<https://w3id.org/brcomp#criticalTempWinter> <http://www.w3.org/2000/01/rdf-schema#comment> "Gibt die Kritische Temperatur für Lagerbauteile im Winter an.\n\nEinheit in [Celsius]"@de .
+<https://w3id.org/brcomp#criticalTempWinter> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the critical temperature for a Bearing in winter.\n\nUnit in [Celsius]."@en .
+<https://w3id.org/brcomp#criticalTempWinter> <http://www.w3.org/2000/01/rdf-schema#label> "Citical Temperature Winter"@en .
+<https://w3id.org/brcomp#criticalTempWinter> <http://www.w3.org/2000/01/rdf-schema#label> "Kritische Temperatur Winter"@de .
+# 
+# https://w3id.org/brcomp#diameter
+<https://w3id.org/brcomp#diameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#diameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brot#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#diameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Diameter for round Component such as piles, pillars, etc.\n\nUnit in [m]."@en .
+<https://w3id.org/brcomp#diameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Durchmesser für runde Bauobjekte wie z.B. Pfähle, Pfeiler, etc.\n\nEinheit in [m]."@de .
+<https://w3id.org/brcomp#diameter> <http://www.w3.org/2000/01/rdf-schema#label> "Durchmesser"@de .
+<https://w3id.org/brcomp#diameter> <http://www.w3.org/2000/01/rdf-schema#label> "diameter"@en .
+# 
+# https://w3id.org/brcomp#height
+<https://w3id.org/brcomp#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#height> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#height> <http://www.w3.org/2000/01/rdf-schema#comment> "Gibt die Höhe eines Brückenbauteils an.\n\nEinheit in [m]."@de .
+<https://w3id.org/brcomp#height> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the height of a bridge component.\n\nUnit in [m]."@en .
+<https://w3id.org/brcomp#height> <http://www.w3.org/2000/01/rdf-schema#label> "Höhe"@de .
+<https://w3id.org/brcomp#height> <http://www.w3.org/2000/01/rdf-schema#label> "height"@en .
+# 
+# https://w3id.org/brcomp#installationYear
+<https://w3id.org/brcomp#installationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#installationYear> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#installationYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Year on which the Component has been installed."@en .
+<https://w3id.org/brcomp#installationYear> <http://www.w3.org/2000/01/rdf-schema#label> "Einbaujahr"@de .
+<https://w3id.org/brcomp#installationYear> <http://www.w3.org/2000/01/rdf-schema#label> "installation year"@en .
+# 
+# https://w3id.org/brcomp#length
+<https://w3id.org/brcomp#length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#length> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#length> <http://www.w3.org/2000/01/rdf-schema#comment> "Gibt die Länge eines Brückenbauteils an.\n\nEinheit in [m]"@de .
+<https://w3id.org/brcomp#length> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the length of a Component.\n\nUnit in [m]"@en .
+<https://w3id.org/brcomp#length> <http://www.w3.org/2000/01/rdf-schema#label> "Länge"@de .
+<https://w3id.org/brcomp#length> <http://www.w3.org/2000/01/rdf-schema#label> "length"@en .
+# 
+# https://w3id.org/brcomp#seaWaterContact
+<https://w3id.org/brcomp#seaWaterContact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#seaWaterContact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#seaWaterContact> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/brcomp#seaWaterContact> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines whether a Component has contact with sea water"@en .
+<https://w3id.org/brcomp#seaWaterContact> <http://www.w3.org/2000/01/rdf-schema#label> "sea water contact"@en .
+# 
+# https://w3id.org/brcomp#tendonDirection
+<https://w3id.org/brcomp#tendonDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#tendonDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Tendon> .
+<https://w3id.org/brot#Tendon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#tendonDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the tendon direction."@en .
+<https://w3id.org/brcomp#tendonDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Gibt die Vorspannungsrichtung an."@de .
+<https://w3id.org/brcomp#tendonDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Vorspannungsrichtung"@de .
+<https://w3id.org/brcomp#tendonDirection> <http://www.w3.org/2000/01/rdf-schema#label> "tendon direction"@en .
+# 
+# https://w3id.org/brcomp#tendonInternal
+<https://w3id.org/brcomp#tendonInternal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#tendonInternal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Tendon> .
+<https://w3id.org/brcomp#tendonInternal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/brcomp#tendonInternal> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines whether a tendon is external or internal. True if the tendon is internal. False if the tendon is external."@en .
+<https://w3id.org/brcomp#tendonInternal> <http://www.w3.org/2000/01/rdf-schema#comment> "Gibt an, ob Vorspannung extern oder intern verbaut ist. True bei interner Vorspannung und false bei externer Vorspannung."@de .
+<https://w3id.org/brcomp#tendonInternal> <http://www.w3.org/2000/01/rdf-schema#label> "Interne Vorspannung"@de .
+<https://w3id.org/brcomp#tendonInternal> <http://www.w3.org/2000/01/rdf-schema#label> "internal tendon"@en .
+# 
+# https://w3id.org/brcomp#type
+<https://w3id.org/brcomp#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#type> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#type> <http://www.w3.org/2000/01/rdf-schema#comment> "Gibt die Bezeichnung des Bauteiltyps an"@de .
+<https://w3id.org/brcomp#type> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the name of the component type."@en .
+<https://w3id.org/brcomp#type> <http://www.w3.org/2000/01/rdf-schema#label> "Typenbezeichnung"@de .
+<https://w3id.org/brcomp#type> <http://www.w3.org/2000/01/rdf-schema#label> "type specification"@en .
+# 
+# https://w3id.org/brcomp#width
+<https://w3id.org/brcomp#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/brcomp#width> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#width> <http://www.w3.org/2000/01/rdf-schema#comment> "Gibt die Breite eines Brückenbauteils an.\n\nEinheit in [m]."@de .
+<https://w3id.org/brcomp#width> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the width of a bridge member.\n\nUnit in [m]."@en .
+<https://w3id.org/brcomp#width> <http://www.w3.org/2000/01/rdf-schema#label> "Breite"@de .
+<https://w3id.org/brcomp#width> <http://www.w3.org/2000/01/rdf-schema#label> "width"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Person
+# 
+# https://w3id.org/brcomp#Abutment
+<https://w3id.org/brcomp#Abutment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Abutment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Abutment> <http://www.w3.org/2000/01/rdf-schema#comment> "Structural component that creates the transition between the bridge structure and the earth dam."@en .
+<https://w3id.org/brcomp#Abutment> <http://www.w3.org/2000/01/rdf-schema#label> "Abutment component"@en .
+<https://w3id.org/brcomp#Abutment> <http://www.w3.org/2000/01/rdf-schema#label> "Widerlagerelement"@de .
+# 
+# https://w3id.org/brcomp#AbutmentBenching
+<https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
+<https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/2000/01/rdf-schema#comment> "Part of a Abutment on which a Bearing is installed."@en .
+<https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/2000/01/rdf-schema#label> "Auflagerbank eines Widerlagers"@de .
+<https://w3id.org/brcomp#AbutmentBenching> <http://www.w3.org/2000/01/rdf-schema#label> "Benching of an abutment"@en .
+# 
+# https://w3id.org/brcomp#AbutmentChamberWall
+<https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
+<https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/2000/01/rdf-schema#comment> "Front wall of Abutment."@en .
+<https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/2000/01/rdf-schema#label> "Chamber wall of an abutment"@en .
+<https://w3id.org/brcomp#AbutmentChamberWall> <http://www.w3.org/2000/01/rdf-schema#label> "Kammerwand eines Widerlagers"@de .
+# 
+# https://w3id.org/brcomp#AbutmentComponent
+<https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Component that is aggregated in a Abutment."@en .
+<https://w3id.org/brcomp#AbutmentComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Abutment component"@en .
+# 
+# https://w3id.org/brcomp#AbutmentFooting
+<https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
+<https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#comment> "Abutment footing"@en .
+<https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#comment> "Footing / foundation of Abutment."@en .
+<https://w3id.org/brcomp#AbutmentFooting> <http://www.w3.org/2000/01/rdf-schema#label> "Fundamentplatte eines Widerlagers"@de .
+# 
+# https://w3id.org/brcomp#AbutmentWingWall
+<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#AbutmentComponent> .
+<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#comment> "Side wall of Abutment."@en .
+<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#label> "Fluegelwand eines Widerlagers"@de .
+<https://w3id.org/brcomp#AbutmentWingWall> <http://www.w3.org/2000/01/rdf-schema#label> "Wing wall of an abutment"@en .
+# 
+# https://w3id.org/brcomp#Arch
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#comment> "No clearly visible separation between the superstructure and the substructure . The arch of the bridge loads the transom diagonally outwards. Both vertical and horizontal forces are transmitted into it."@en .
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#label> "Arch"@en .
+<https://w3id.org/brcomp#Arch> <http://www.w3.org/2000/01/rdf-schema#label> "Brückenbogen"@de .
+# 
+# https://w3id.org/brcomp#Asphalt
+<https://w3id.org/brcomp#Asphalt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Asphalt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Coating> .
+<https://w3id.org/brcomp#Asphalt> <http://www.w3.org/2000/01/rdf-schema#comment> "Natural or technically produced mixture of the binder bitumen and aggregates used in road construction for road pavements."@en .
+<https://w3id.org/brcomp#Asphalt> <http://www.w3.org/2000/01/rdf-schema#label> "Asphalt"@en .
+# 
+# https://w3id.org/brcomp#Bearing
+<https://w3id.org/brcomp#Bearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Bearing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Bearing> <http://www.w3.org/2000/01/rdf-schema#comment> "Have the task of transferring the forces generated by their own weight, traffic loads and braking and wind forces to the substructure and abutments. A Bearing must be designed in such a way that it allows movements and rotations due to traffic, temperature differences, earthquakes, prestressing, shrinkage and creep, etc."@en .
+<https://w3id.org/brcomp#Bearing> <http://www.w3.org/2000/01/rdf-schema#label> " bearing"@en .
+# 
+# https://w3id.org/brcomp#BearingSeat
+<https://w3id.org/brcomp#BearingSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#BearingSeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#BearingSeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Component placed on the Bearing and serves to transfer forces over a larger area."@en .
+<https://w3id.org/brcomp#BearingSeat> <http://www.w3.org/2000/01/rdf-schema#label> "Bearing seat"@en .
+<https://w3id.org/brcomp#BearingSeat> <http://www.w3.org/2000/01/rdf-schema#label> "Lagersockel"@de .
+# 
+# https://w3id.org/brcomp#BirdsProtection
+<https://w3id.org/brcomp#BirdsProtection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#BirdsProtection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FinishingComponent> .
+<https://w3id.org/brcomp#BirdsProtection> <http://www.w3.org/2000/01/rdf-schema#comment> "Components for protecting niches or interstices from birds."@en .
+<https://w3id.org/brcomp#BirdsProtection> <http://www.w3.org/2000/01/rdf-schema#label> "Birds protection"@en .
+<https://w3id.org/brcomp#BirdsProtection> <http://www.w3.org/2000/01/rdf-schema#label> "Vogelschutz"@de .
+# 
+# https://w3id.org/brcomp#Cable
+<https://w3id.org/brcomp#Cable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#TensionComponent> .
+<https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#comment> "Steel cable that is installed on a Pylon and takes tensile loads from the superstructure."@en .
+<https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#label> "Cable"@de .
+<https://w3id.org/brcomp#Cable> <http://www.w3.org/2000/01/rdf-schema#label> "Seil"@de .
+# 
+# https://w3id.org/brcomp#CableAnchoringDevice
+<https://w3id.org/brcomp#CableAnchoringDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#CableAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/brcomp#CableAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Component for anchoring steel cables of a bridge to Pylon."@en .
+<https://w3id.org/brcomp#CableAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Cable anchoring device"@en .
+<https://w3id.org/brcomp#CableAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Seilverankerung"@de .
+# 
+# https://w3id.org/brcomp#Cap
+<https://w3id.org/brcomp#Cap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Cap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FinishingComponent> .
+<https://w3id.org/brcomp#Cap> <http://www.w3.org/2000/01/rdf-schema#comment> "Non-traveled edge formation of reinforced concrete or prestressed concrete bridges, which can also be formed as kerbs.\n\n caps have to fulfil various functions. In addition to protecting the load-bearing bridge structure, they are used for anchoring passive protective devices and as bicycle and/or pedestrian paths. Due to their exposed position, they are exposed to particularly strong attacks, e.g. frost-thaw salt attacks. In addition, there are dynamic loads caused by traffic on the bridges. Even if the bridge caps undergo optical changes as a result of wear, load or weathering during the planned service life, concrete bridge caps are safe and durable if constructive and technical rules are observed."@en .
+<https://w3id.org/brcomp#Cap> <http://www.w3.org/2000/01/rdf-schema#label> "Cap"@en .
+<https://w3id.org/brcomp#Cap> <http://www.w3.org/2000/01/rdf-schema#label> "Kappe"@de .
+# 
+# https://w3id.org/brcomp#ConcreteStayTensionComponent
+<https://w3id.org/brcomp#ConcreteStayTensionComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#ConcreteStayTensionComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#TensionComponent> .
+<https://w3id.org/brcomp#ConcreteStayTensionComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Concrete components subjected to tensile stress."@en .
+<https://w3id.org/brcomp#ConcreteStayTensionComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Tension component as a concrete stay"@en .
+<https://w3id.org/brcomp#ConcreteStayTensionComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Zugglieder aus Stahlbeton"@de .
+# 
+# https://w3id.org/brcomp#ConstructionJoint
+<https://w3id.org/brcomp#ConstructionJoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#ConstructionJoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Joint> .
+<https://w3id.org/brot#Joint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#ConstructionJoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Separation lines within components. They occur, for example, in concrete construction as set-down joints between successive concreting sections. Concreting in several stages is often unavoidable due to the construction process. The aim is to create the best possible bond between the adjacent concreting sections. Since the reinforcement runs through the construction joints, a traditional shuttering of the concreting section with wood would be costly. Today, expanded metal is mostly used for this purpose, which can be easily cut and bent to size and guarantees a certain degree of interlocking of the concreting sections. If, for example, a straight line of joints is desired for aesthetic reasons, formwork panels can be used in combination with a reverse bending connection for the reinforcing irons, which allow subsequent interlocking by bending up the reinforcing bars as the concreting process continues. In engineering structures such as bridges, screw connections are used to connect the reinforcement steel over construction joints due to the higher loads."@en .
+<https://w3id.org/brcomp#ConstructionJoint> <http://www.w3.org/2000/01/rdf-schema#label> "Arbeitsfuge"@de .
+<https://w3id.org/brcomp#ConstructionJoint> <http://www.w3.org/2000/01/rdf-schema#label> "Construction joint"@en .
+# 
+# https://w3id.org/brcomp#CouplingJoint
+<https://w3id.org/brcomp#CouplingJoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#CouplingJoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Joint> .
+<https://w3id.org/brcomp#CouplingJoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Necessary in prestressed concrete construction if the component has to be constructed in several sections, e.g. in bridge construction. The individual components are coupled to each other at the coupling joints and the tendons are connected to each other, e.g. bolted, depending on the prestressing method"@en .
+<https://w3id.org/brcomp#CouplingJoint> <http://www.w3.org/2000/01/rdf-schema#label> "Coupling joint"@en .
+<https://w3id.org/brcomp#CouplingJoint> <http://www.w3.org/2000/01/rdf-schema#label> "Koppelfuge"@de .
+# 
+# https://w3id.org/brcomp#Drainage
+<https://w3id.org/brcomp#Drainage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Drainage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FinishingComponent> .
+<https://w3id.org/brcomp#Drainage> <http://www.w3.org/2000/01/rdf-schema#comment> "Technical systems that counteract waterlogging on the bridge construction."@en .
+<https://w3id.org/brcomp#Drainage> <http://www.w3.org/2000/01/rdf-schema#label> "Drainage"@en .
+<https://w3id.org/brcomp#Drainage> <http://www.w3.org/2000/01/rdf-schema#label> "Entwaesserung"@de .
+# 
+# https://w3id.org/brcomp#DrilledPile
+<https://w3id.org/brcomp#DrilledPile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#DrilledPile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#Pile> .
+<https://w3id.org/brcomp#DrilledPile> <http://www.w3.org/2000/01/rdf-schema#comment> "Pile that is drilled to the underground by utilizing specifc drilling systems and machines."@en .
+<https://w3id.org/brcomp#DrilledPile> <http://www.w3.org/2000/01/rdf-schema#label> "Bohrpfahl"@de .
+<https://w3id.org/brcomp#DrilledPile> <http://www.w3.org/2000/01/rdf-schema#label> "Drilled pile"@en .
+# 
+# https://w3id.org/brcomp#ElastomericBearings
+<https://w3id.org/brcomp#ElastomericBearings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#ElastomericBearings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FixedBearingComponent> .
+<https://w3id.org/brcomp#ElastomericBearings> <http://www.w3.org/2000/01/rdf-schema#comment> "Bearings made of chloroprene rubber (CR) or natural rubber (NR)."@en .
+<https://w3id.org/brcomp#ElastomericBearings> <http://www.w3.org/2000/01/rdf-schema#label> "Elastomeric bearings"@en .
+<https://w3id.org/brcomp#ElastomericBearings> <http://www.w3.org/2000/01/rdf-schema#label> "Verformungslager"@de .
+# 
+# https://w3id.org/brcomp#ExpansionJoint
+<https://w3id.org/brcomp#ExpansionJoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#ExpansionJoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Joint> .
+<https://w3id.org/brcomp#ExpansionJoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Joint for interrupting components in order to prevent stress cracking."@en .
+<https://w3id.org/brcomp#ExpansionJoint> <http://www.w3.org/2000/01/rdf-schema#label> "Dehnungs-/Bewegungsfuge"@de .
+<https://w3id.org/brcomp#ExpansionJoint> <http://www.w3.org/2000/01/rdf-schema#label> "Expansion/movement joint"@en .
+# 
+# https://w3id.org/brcomp#FinishingComponent
+<https://w3id.org/brcomp#FinishingComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#FinishingComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#FinishingComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Component that is installed during the finishing phase of the bridge construction after the shell construction phase (e.g. railing, bridge cap, etc.). Has no load-bearing capacity."@en .
+<https://w3id.org/brcomp#FinishingComponent> <http://www.w3.org/2000/01/rdf-schema#label> " Finishing Component"@en .
+<https://w3id.org/brcomp#FinishingComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Ausbauelement einer Bruecke"@de .
+# 
+# https://w3id.org/brcomp#FixedBearingComponent
+<https://w3id.org/brcomp#FixedBearingComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#FixedBearingComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#Bearing> .
+<https://w3id.org/brcomp#FixedBearingComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Fixed bearing"@en .
+<https://w3id.org/brcomp#FixedBearingComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Transmits vertical and horizontal forces from any direction."@en .
+# 
+# https://w3id.org/brcomp#Footing
+<https://w3id.org/brcomp#Footing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Footing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FoundationComponent> .
+<https://w3id.org/brcomp#Footing> <http://www.w3.org/2000/01/rdf-schema#comment> "Flat foundation which rests on the ground."@en .
+<https://w3id.org/brcomp#Footing> <http://www.w3.org/2000/01/rdf-schema#label> "Footing"@en .
+<https://w3id.org/brcomp#Footing> <http://www.w3.org/2000/01/rdf-schema#label> "Gruendung"@de .
+# 
+# https://w3id.org/brcomp#Foundation
+<https://w3id.org/brcomp#Foundation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#comment> "Component for the foundation of abutments and central supports and the transfer of bridge loads."@en .
+<https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#label> "Foundation"@en .
+<https://w3id.org/brcomp#Foundation> <http://www.w3.org/2000/01/rdf-schema#label> "Gruendungselement einer Bruecke"@de .
+# 
+# https://w3id.org/brcomp#FoundationComponent
+<https://w3id.org/brcomp#FoundationComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#FoundationComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#FoundationComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Component that is aggregated to the Foundation."@en .
+<https://w3id.org/brcomp#FoundationComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Foundation component"@en .
+# 
+# https://w3id.org/brcomp#Girder
+<https://w3id.org/brcomp#Girder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Girder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/brcomp#Girder> <http://www.w3.org/2000/01/rdf-schema#comment> "Support beam used in construction. It is the main horizontal support of a structure which supports smaller beams. Girders often have an I-beam cross section composed of two load-bearing flanges separated by a stabilizing web, but may also have a box shape, Z shape, or other forms. A girder is commonly used to build bridges."@en .
+<https://w3id.org/brcomp#Girder> <http://www.w3.org/2000/01/rdf-schema#label> "Girder"@en .
+# 
+# https://w3id.org/brcomp#GirderBracing
+<https://w3id.org/brcomp#GirderBracing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderBracing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
+<https://w3id.org/brcomp#GirderBracing> <http://www.w3.org/2000/01/rdf-schema#comment> "Bracing component aggregated in a Girder."@en .
+<https://w3id.org/brcomp#GirderBracing> <http://www.w3.org/2000/01/rdf-schema#label> "Aussteifung (stabfoermiges Component)"@de .
+<https://w3id.org/brcomp#GirderBracing> <http://www.w3.org/2000/01/rdf-schema#label> "Bracing (bar-shaped component)"@en .
+# 
+# https://w3id.org/brcomp#GirderComponent
+<https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Component that is aggregated in a Girder."@en .
+<https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/2000/01/rdf-schema#label> " girder"@en .
+<https://w3id.org/brcomp#GirderComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Brueckendeck (gesamter Querschnitt des Fahrbahntragwerks)"@de .
+# 
+# https://w3id.org/brcomp#GirderCrossGirder
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Querbalken des Brueckendeckquerschnitts"@de .
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "cross girder of the bridge beam cross-section"@en .
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#label> "Cross girder"@en .
+<https://w3id.org/brcomp#GirderCrossGirder> <http://www.w3.org/2000/01/rdf-schema#label> "Querbalken"@de .
+# 
+# https://w3id.org/brcomp#GirderDeck
+<https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
+<https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#comment> "Obere Platte des Brueckendeckquerschnitts"@de .
+<https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#comment> "Upper plate of the bridge beam cross-section."@en .
+<https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#label> "Brückenplatte"@de .
+<https://w3id.org/brcomp#GirderDeck> <http://www.w3.org/2000/01/rdf-schema#label> "Deck"@en .
+# 
+# https://w3id.org/brcomp#GirderDiaphragm
+<https://w3id.org/brcomp#GirderDiaphragm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderDiaphragm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
+<https://w3id.org/brcomp#GirderDiaphragm> <http://www.w3.org/2000/01/rdf-schema#comment> "Plate-shaped component used for bracing the Girder."@en .
+<https://w3id.org/brcomp#GirderDiaphragm> <http://www.w3.org/2000/01/rdf-schema#label> "Stiffening diaphgragm"@en .
+<https://w3id.org/brcomp#GirderDiaphragm> <http://www.w3.org/2000/01/rdf-schema#label> "Versteifungsdiaphragma"@de .
+# 
+# https://w3id.org/brcomp#GirderDownPlate
+<https://w3id.org/brcomp#GirderDownPlate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderDownPlate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
+<https://w3id.org/brcomp#GirderDownPlate> <http://www.w3.org/2000/01/rdf-schema#comment> "Lower plate of the bridge beam cross-section"@en .
+<https://w3id.org/brcomp#GirderDownPlate> <http://www.w3.org/2000/01/rdf-schema#comment> "Untere Platte des Brueckendeckquerschnitts"@de .
+<https://w3id.org/brcomp#GirderDownPlate> <http://www.w3.org/2000/01/rdf-schema#label> "Girder down plate"@en .
+<https://w3id.org/brcomp#GirderDownPlate> <http://www.w3.org/2000/01/rdf-schema#label> "Unterplatte"@en .
+# 
+# https://w3id.org/brcomp#GirderMainGirder
+<https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
+<https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Balken in der Längsrichtung des Brückendeckquerschnitts"@de .
+<https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#comment> "Girder component in longitudinal direction of the bridge beam cross-section"@en .
+<https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#label> "Längsbalken"@de .
+<https://w3id.org/brcomp#GirderMainGirder> <http://www.w3.org/2000/01/rdf-schema#label> "Main girder" .
+# 
+# https://w3id.org/brcomp#GirderSegment
+<https://w3id.org/brcomp#GirderSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GirderSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#Girder> .
+<https://w3id.org/brcomp#GirderSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#GirderComponent> .
+<https://w3id.org/brcomp#GirderSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Girder segment\" is a segment of a bridge deck, which can represent either a prefabrecated component or a section of the construction stage."@en .
+<https://w3id.org/brcomp#GirderSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Brueckendeckssegment\" ist ein Segment von einem Brueckendeck, das ein Fertigteilkomponent bzw. ein Segment eines Betonierabschnitts abbildet." .
+<https://w3id.org/brcomp#GirderSegment> <http://www.w3.org/2000/01/rdf-schema#label> "Brueckendecksegment"@de .
+<https://w3id.org/brcomp#GirderSegment> <http://www.w3.org/2000/01/rdf-schema#label> "Girder segment"@en .
+# 
+# https://w3id.org/brcomp#GroundAnchoringDevice
+<https://w3id.org/brcomp#GroundAnchoringDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#GroundAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#GroundAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Component that anchors the Foundation to the ground below."@en .
+<https://w3id.org/brcomp#GroundAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Erdverankerung"@de .
+<https://w3id.org/brcomp#GroundAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Ground anchoring device"@en .
+# 
+# https://w3id.org/brcomp#Illumination
+<https://w3id.org/brcomp#Illumination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Illumination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FinishingComponent> .
+<https://w3id.org/brcomp#Illumination> <http://www.w3.org/2000/01/rdf-schema#comment> "Technical system for illuminating the bridge mainly for traffic but also could be also installed for decorative effects."@en .
+<https://w3id.org/brcomp#Illumination> <http://www.w3.org/2000/01/rdf-schema#label> "Beleuchtung"@de .
+<https://w3id.org/brcomp#Illumination> <http://www.w3.org/2000/01/rdf-schema#label> "Illumination"@en .
+# 
+# https://w3id.org/brcomp#MasticAsphalt
+<https://w3id.org/brcomp#MasticAsphalt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#MasticAsphalt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#Asphalt> .
+<https://w3id.org/brcomp#MasticAsphalt> <http://www.w3.org/2000/01/rdf-schema#comment> "Mixture of fine and coarse aggregates and bitumen that can be poured and spread during installation. Therefore, no compaction work is necessary when using mastic asphalt. Mastic asphalt is used as road surface, as floor covering and for waterproofing."@en .
+<https://w3id.org/brcomp#MasticAsphalt> <http://www.w3.org/2000/01/rdf-schema#label> "Gussasphalt"@de .
+# 
+# https://w3id.org/brcomp#MovableBearingComponent
+<https://w3id.org/brcomp#MovableBearingComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#MovableBearingComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#Bearing> .
+<https://w3id.org/brcomp#MovableBearingComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Bearing that transmits vertical forces and allows movements in at least one direction."@en .
+# 
+# https://w3id.org/brcomp#NoiseBarrier
+<https://w3id.org/brcomp#NoiseBarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#NoiseBarrier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FinishingComponent> .
+<https://w3id.org/brcomp#NoiseBarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "Components and technical systems for noise abatement and part of immission control. It is intended to ensure the well-being of humans and animals with regard to noise."@en .
+<https://w3id.org/brcomp#NoiseBarrier> <http://www.w3.org/2000/01/rdf-schema#label> "Laermschutz"@de .
+<https://w3id.org/brcomp#NoiseBarrier> <http://www.w3.org/2000/01/rdf-schema#label> "Noise barrier"@en .
+# 
+# https://w3id.org/brcomp#Pavement
+<https://w3id.org/brcomp#Pavement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Pavement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FinishingComponent> .
+<https://w3id.org/brcomp#Pavement> <http://www.w3.org/2000/01/rdf-schema#comment> "Part of a road intended for pedestrian traffic."@en .
+<https://w3id.org/brcomp#Pavement> <http://www.w3.org/2000/01/rdf-schema#label> "Gehweg"@de .
+<https://w3id.org/brcomp#Pavement> <http://www.w3.org/2000/01/rdf-schema#label> "Pavement"@en .
+# 
+# https://w3id.org/brcomp#Pier
+<https://w3id.org/brcomp#Pier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#comment> "Components that support the ends of spans between these abutments."@en .
+<https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#label> "Pfeiler"@de .
+<https://w3id.org/brcomp#Pier> <http://www.w3.org/2000/01/rdf-schema#label> "Pier"@en .
+# 
+# https://w3id.org/brcomp#Pile
+<https://w3id.org/brcomp#Pile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Pile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FoundationComponent> .
+<https://w3id.org/brcomp#Pile> <http://www.w3.org/2000/01/rdf-schema#comment> "Rod-shaped component that reaches a certain depth into the soil and is connected to the Foundation."@en .
+<https://w3id.org/brcomp#Pile> <http://www.w3.org/2000/01/rdf-schema#label> "Pfahl"@de .
+<https://w3id.org/brcomp#Pile> <http://www.w3.org/2000/01/rdf-schema#label> "Pile"@en .
+# 
+# https://w3id.org/brcomp#PinBearing
+<https://w3id.org/brcomp#PinBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#PinBearing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FixedBearingComponent> .
+<https://w3id.org/brcomp#PinBearing> <http://www.w3.org/2000/01/rdf-schema#comment> "Fixed bearings that allow tilting about any axis."@en .
+<https://w3id.org/brcomp#PinBearing> <http://www.w3.org/2000/01/rdf-schema#label> "Punktkipplager"@de .
+# 
+# https://w3id.org/brcomp#PotBearings
+<https://w3id.org/brcomp#PotBearings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#PotBearings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FixedBearingComponent> .
+<https://w3id.org/brcomp#PotBearings> <http://www.w3.org/2000/01/rdf-schema#comment> "Bearing that works on the following principle: A disc made of high-quality natural rubber (elastomer) is enclosed on all sides in a steel pot. Under high pressure, the elastomer behaves like a liquid and, thanks to its deformability, can be tilted about any horizontal axis."@en .
+<https://w3id.org/brcomp#PotBearings> <http://www.w3.org/2000/01/rdf-schema#label> "Pot bearings"@en .
+<https://w3id.org/brcomp#PotBearings> <http://www.w3.org/2000/01/rdf-schema#label> "Topflager"@de .
+# 
+# https://w3id.org/brcomp#PrefabricatedComponent
+<https://w3id.org/brcomp#PrefabricatedComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#PrefabricatedComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#PrefabricatedComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Finished parts made of raw materials or semi-finished products that can be used for construction without further processing."@en .
+<https://w3id.org/brcomp#PrefabricatedComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Fertigteil"@de .
+<https://w3id.org/brcomp#PrefabricatedComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Prefabricated component"@en .
+# 
+# https://w3id.org/brcomp#Pylon
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SubStructureComponent> .
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#comment> "In bridge construction, the high towering component over which the suspension cables of suspension bridges run or to which the stay cables of cable-stayed bridges are anchored."@en .
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#label> "Pylon"@de .
+<https://w3id.org/brcomp#Pylon> <http://www.w3.org/2000/01/rdf-schema#label> "Tower/pylon"@en .
+# 
+# https://w3id.org/brcomp#Railing
+<https://w3id.org/brcomp#Railing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Railing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FinishingComponent> .
+<https://w3id.org/brcomp#Railing> <http://www.w3.org/2000/01/rdf-schema#comment> "Component for the fall protection of persons, which is often installed at the edge of the pavement."@en .
+<https://w3id.org/brcomp#Railing> <http://www.w3.org/2000/01/rdf-schema#label> "Geländer"@de .
+<https://w3id.org/brcomp#Railing> <http://www.w3.org/2000/01/rdf-schema#label> "Railing"@en .
+# 
+# https://w3id.org/brcomp#ReinforcingBar
+<https://w3id.org/brcomp#ReinforcingBar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#ReinforcingBar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#ReinforcingComponent> .
+<https://w3id.org/brcomp#ReinforcingBar> <http://www.w3.org/2000/01/rdf-schema#comment> "Serves as reinforcement of reinforced concrete components and is cast with concrete after installation in the formwork."@en .
+<https://w3id.org/brcomp#ReinforcingBar> <http://www.w3.org/2000/01/rdf-schema#label> "Bewehrungsstab"@de .
+<https://w3id.org/brcomp#ReinforcingBar> <http://www.w3.org/2000/01/rdf-schema#label> "Reinforcing bar"@en .
+# 
+# https://w3id.org/brcomp#ReinforcingComponent
+<https://w3id.org/brcomp#ReinforcingComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#ReinforcingComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#ReinforcingComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Composite component that is aggregated in concrete components to increase their load-bearing capacity."@en .
+<https://w3id.org/brcomp#ReinforcingComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Bewehrungselement einer Bruecke"@de .
+<https://w3id.org/brcomp#ReinforcingComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Reinforcing Component"@en .
+# 
+# https://w3id.org/brcomp#ReinforcingMesh
+<https://w3id.org/brcomp#ReinforcingMesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#ReinforcingMesh> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#ReinforcingComponent> .
+<https://w3id.org/brcomp#ReinforcingMesh> <http://www.w3.org/2000/01/rdf-schema#comment> "Wire mesh made of welded bars of reinforcing steel, which are used for the reinforcement of flat reinforced concrete components."@en .
+<https://w3id.org/brcomp#ReinforcingMesh> <http://www.w3.org/2000/01/rdf-schema#label> "Bewehrungsmatte"@de .
+<https://w3id.org/brcomp#ReinforcingMesh> <http://www.w3.org/2000/01/rdf-schema#label> "Reinforcing mesh"@en .
+# 
+# https://w3id.org/brcomp#RockerBearing
+<https://w3id.org/brcomp#RockerBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#RockerBearing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FixedBearingComponent> .
+<https://w3id.org/brcomp#RockerBearing> <http://www.w3.org/2000/01/rdf-schema#comment> "Fixed bearing that only allows tilting movements around the bearing axis (one-sided tilting). They are only suitable if no significant tilting movements are to be expected across the bridge axis; i.e. for straight or slightly curved bridges with small bearing spacings as well as rigid cross members and rigid piers."@en .
+<https://w3id.org/brcomp#RockerBearing> <http://www.w3.org/2000/01/rdf-schema#label> "Linienkipplager"@de .
+<https://w3id.org/brcomp#RockerBearing> <http://www.w3.org/2000/01/rdf-schema#label> "Rocker bearing"@en .
+# 
+# https://w3id.org/brcomp#RollerBearing
+<https://w3id.org/brcomp#RollerBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#RollerBearing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#MovableBearingComponent> .
+<https://w3id.org/brcomp#RollerBearing> <http://www.w3.org/2000/01/rdf-schema#comment> "One-sided movable Bearings which allow one-sided tilting. They have a limited use like the line tilting bearings. One or more cylindrical rollers are located between the plane-parallel surfaces of the upper and lower bearing plates. In the standard version with one roller, tilting around the roller axis is possible. It is possible to transmit horizontal forces perpendicular to the direction of movement. Since the direction of movement must be perpendicular to the tilting direction, they are not suitable for inclined bridges."@en .
+<https://w3id.org/brcomp#RollerBearing> <http://www.w3.org/2000/01/rdf-schema#label> "Rollenlager"@de .
+<https://w3id.org/brcomp#RollerBearing> <http://www.w3.org/2000/01/rdf-schema#label> "Roller bearing"@en .
+# 
+# https://w3id.org/brcomp#SafetyKerb
+<https://w3id.org/brcomp#SafetyKerb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#SafetyKerb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FinishingComponent> .
+<https://w3id.org/brcomp#SafetyKerb> <http://www.w3.org/2000/01/rdf-schema#comment> "Protective device made of wood, concrete, asphalt or steel for securing road users or workplaces on or near roads."@en .
+<https://w3id.org/brcomp#SafetyKerb> <http://www.w3.org/2000/01/rdf-schema#label> "Safety kerb"@en .
+<https://w3id.org/brcomp#SafetyKerb> <http://www.w3.org/2000/01/rdf-schema#label> "Schrammbord"@de .
+# 
+# https://w3id.org/brcomp#SlidingBearing
+<https://w3id.org/brcomp#SlidingBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#SlidingBearing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#MovableBearingComponent> .
+<https://w3id.org/brcomp#SlidingBearing> <http://www.w3.org/2000/01/rdf-schema#comment> "In the case of sliding bearings movable on one side, 2 guide pads with austenitic sheet steel are attached to the sliding plate. They transmit the horizontal forces via embedded PTFE to the upper bearing plate."@en .
+<https://w3id.org/brcomp#SlidingBearing> <http://www.w3.org/2000/01/rdf-schema#label> "Gleitlager"@de .
+<https://w3id.org/brcomp#SlidingBearing> <http://www.w3.org/2000/01/rdf-schema#label> "Sliding bearings"@en .
+# 
+# https://w3id.org/brcomp#SphericalBearings
+<https://w3id.org/brcomp#SphericalBearings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#SphericalBearings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FixedBearingComponent> .
+<https://w3id.org/brcomp#SphericalBearings> <http://www.w3.org/2000/01/rdf-schema#comment> "Bearing thatenables the displacement and sliding movement in a flat and a curved sliding surface between the steel bearing plates. Spherical bearings generally act as biaxially displaceable pin bearings."@en .
+<https://w3id.org/brcomp#SphericalBearings> <http://www.w3.org/2000/01/rdf-schema#label> "Kalottenlager"@de .
+<https://w3id.org/brcomp#SphericalBearings> <http://www.w3.org/2000/01/rdf-schema#label> "Spherical bearings"@en .
+# 
+# https://w3id.org/brcomp#SubStructureComponent
+<https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Component that is contained in the BridgeSubStructure zone."@en .
+<https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Substructure Element"@en .
+<https://w3id.org/brcomp#SubStructureComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Unterbauelement einer Bruecke"@de .
+# 
+# https://w3id.org/brcomp#SuperStructureComponent
+<https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brot#Component> .
+<https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Component that is contained in the BridgeSuperStructure zone."@en .
+<https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge superstructure element"@en .
+<https://w3id.org/brcomp#SuperStructureComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Ueberbauelement"@de .
+# 
+# https://w3id.org/brcomp#Tendon
+<https://w3id.org/brcomp#Tendon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#Tendon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#ReinforcingComponent> .
+<https://w3id.org/brcomp#Tendon> <http://www.w3.org/2000/01/rdf-schema#comment> "Component made of high-strength steel, which is mainly used for prestressing in prestressed concrete construction."@en .
+<https://w3id.org/brcomp#Tendon> <http://www.w3.org/2000/01/rdf-schema#label> "Spannglied"@de .
+<https://w3id.org/brcomp#Tendon> <http://www.w3.org/2000/01/rdf-schema#label> "Tendon"@en .
+# 
+# https://w3id.org/brcomp#TendonAnchoringDevice
+<https://w3id.org/brcomp#TendonAnchoringDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#TendonAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#ReinforcingComponent> .
+<https://w3id.org/brcomp#TendonAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "The task of the TendonAnchoringDevice is to transfer the forces of the tendon to the concrete. This is usually done with anchor plates to which the prestressing steel transmits the forces through wedge anchoring, upset heads or nuts."@en .
+<https://w3id.org/brcomp#TendonAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Spanngliedverankerung"@de .
+<https://w3id.org/brcomp#TendonAnchoringDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Tendon anchoring device"@en .
+# 
+# https://w3id.org/brcomp#TensionComponent
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#SuperStructureComponent> .
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Tension component of superstructure"@en .
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Zugglied des Ueberbaus"@de .
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Tension component"@en .
+<https://w3id.org/brcomp#TensionComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Zugglied"@de .
+# 
+# https://w3id.org/brcomp#TrafficBarrier
+<https://w3id.org/brcomp#TrafficBarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brcomp#TrafficBarrier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/brcomp#FinishingComponent> .
+<https://w3id.org/brcomp#TrafficBarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "Road components to clarify traffic guidance for road users."@en .
+<https://w3id.org/brcomp#TrafficBarrier> <http://www.w3.org/2000/01/rdf-schema#label> "Leiteinrichtung"@de .
+<https://w3id.org/brcomp#TrafficBarrier> <http://www.w3.org/2000/01/rdf-schema#label> "Traffic barrier"@en .
+# 
+# https://w3id.org/brot#Coating
+# 
+# https://w3id.org/brot#Component
+# 
+# https://w3id.org/brot#Joint
+# 
+# https://w3id.org/brot#Tendon
+# 
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Al-Hakam Hamdan" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Taras Kozak" .
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
